@@ -1,0 +1,30 @@
+//REQUEST//
+
+URL: https://pokeapi.co/api/v2/pokemon
+${IP}/${path = caminho de identificação do recuros} -- COMPOSIÇÂO DA URL
+
+Request Method: get => buscar recuros
+                post => inserir um dado
+                put => atualizar dado
+                delete => deletar dado
+
+Request HEADERS: 
+ex: content-type:application/json
+
+Request Body
+{
+    "name":"Teste";
+}
+
+
+//RESPONSE//
+
+STATUS CODE => O que aconteceu com a requisição. (200 ate 299)- sucesso
+                                                      204 - nao tem conteudo
+                                                 (300 ate 399) - 
+                                                 (400 ate 499) - erro por parte do cliente
+                                                 (500 ate 599) - erro interno no servidor
+
+Response HEADERS
+Response Body
+

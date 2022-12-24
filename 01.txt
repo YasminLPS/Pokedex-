@@ -1,0 +1,35 @@
+//GERAL//
+URL: https://pokeapi.co/api/v2/pokemon
+${IP}/${path = caminho de identificação do recuros} -- COMPOSIÇÂO DA URL
+
+IP: https://pokeapi.co
+    http://127.0.01:3000 //local
+
+PATH: /api/v2/pokemon -- EU QUERO ISSO DAQUELE IP 
+
+Request Method: get => buscar recuros
+                post => inserir um dado
+                put => atualizar dado
+                delete => deletar dado
+
+formas de passar dados para executar os dados: - No proprio PATH
+                                               - QUERY STRING (descrição de busca) => path +?type=grass&name=i
+
+
+//HEADERS// 
+Areas de dados para trasmitir/receber do servidor, metadados da requisição descrever ou complementar a requisição
+(Uma especie de "configuração" da nossa requisição.)
+Authorization. 
+
+accept: text/html/application/xhtml+xml,applications/xml;q=0.9,image/webp,image/apng,*/*;q=0,application/signed-exchange;v=b3;q=0.0
+=> Aceito html, application XHTML, xml, varios tipos de imagem....(fala para o servidor o que eu aceita como resposta) 
+
+accept-language: pt-BR, pt;0.9,en-US;q=0.8,en;q=0.7,gl;q=0.6;
+=> Aceito linguagens com prioridade(q=..) maxima pt br, segunda pt, terceita en-us...
+
+
+
+//Body// --RESPOSTA E REQUISIÇÃO -- OBS: NA RESPOSTA O GET TEM BODY
+Dado que eu quero navegar.
+GET nao tem body na requisição.
+POST possui, para enviar os dados seria pelo body.
